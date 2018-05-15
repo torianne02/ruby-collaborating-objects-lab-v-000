@@ -10,7 +10,10 @@ class Artist
     @@songs
   end
 
-  def find_or_create_by_name
+  def find_or_create_by_name(name)
+    if self.artist(name).uniq
+      self.artist.name = name
+    end 
   end
 
   def save(song)
