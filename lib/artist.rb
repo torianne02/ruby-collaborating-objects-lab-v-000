@@ -13,7 +13,7 @@ class Artist
   def find_or_create_by_name
   end
 
-  def add_song
+  def save
   end
 
   def print_songs
