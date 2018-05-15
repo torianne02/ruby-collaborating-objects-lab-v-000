@@ -11,4 +11,8 @@ class Artist
 
   def add_song
   end
+
+  def print_songs
+    @@songs
+  end
 end
