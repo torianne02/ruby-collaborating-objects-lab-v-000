@@ -7,8 +7,11 @@ class Artist
     @songs = []
   end
 
+  def self.all 
+    @@all 
+  end
+
   def add_song(song)
-    song.artist = self
     @songs << song
   end
 
@@ -18,10 +21,6 @@ class Artist
     else
       specific_artist = Artist.new(artist_name)
     end
-  end
-
-  def self.all?
-    @@all
   end
 
   def save(song)
