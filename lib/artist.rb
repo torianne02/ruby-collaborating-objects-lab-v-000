@@ -6,6 +6,10 @@ class Artist
     @name = name
   end
 
+  def songs
+    @@songs
+  end
+
   def find_or_create_by_name
   end
 
@@ -13,6 +17,6 @@ class Artist
   end
 
   def print_songs
-    return @@songs
+    @@songs
   end
 end
